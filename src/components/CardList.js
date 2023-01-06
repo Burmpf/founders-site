@@ -1,15 +1,21 @@
 import React from 'react';
-import MyCard from './Card';
+import { Card } from 'react-bootstrap';
 
-const CardList = ({cards}) => {
+const CardList = ({ cards }) => {
     return (
-
-        cards.map(card => (
-                <MyCard imageUrl={card.imageUrl} title={card.title} twitterUrl={card.twitterUrl}>
-                </MyCard>
-            ))
-        
-
+        <div className="card-list">
+            {cards.map(card => (
+                <Card key={card.title}>
+                    <Card.Img variant="top" src={card.imageUrl} alt={card.title} />
+                    <Card.Body>
+                        <Card.Title>{card.title}</Card.Title>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a href={card.link}>Twitter</a>
+                    </Card.Footer>
+                </Card>
+            ))}
+        </div>
     );
 };
 
