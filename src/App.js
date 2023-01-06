@@ -4,10 +4,9 @@ import CardList from './components/CardList';
 const App = () => {
   const cards = [
     {
-      imageUrl: './images/broly.gif',
+      imageUrl: './images/founder.png',
       title: 'Burmpf',
-      twitterUrl: 'https://twitter.com/Burmpf',
-      description: 'This is the first card'
+      link: 'https://twitter.com/Burmpf'
     }
     
   ];
