@@ -4,7 +4,7 @@ import CardList from './components/CardList';
 const App = () => {
   const cards = [
     {
-      imageUrl: './images/founder.png',
+      imageUrl: './images/broly.gif',
       title: 'Burmpf',
       link: 'https://twitter.com/Burmpf'
     }
