@@ -1,11 +1,11 @@
-import React from 'react';
+//import React, { Component } from 'react';
 import { Card } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import './CardList.css'
 
 
 const CardList = ({ cards }) => {
-    console.log(cards)
     return (
         <div className="card-list">
             {cards.map(card => (
