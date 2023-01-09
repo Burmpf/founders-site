@@ -1,8 +1,8 @@
 import React from 'react';
 import BasicNav from './components/Navbar';
 //import CardList from './components/CardList';
-import Gallery from './components/Gallery'
-import { Route, Routes } from "react-router-dom"
+//import Gallery from './components/Gallery'
+
 
 const App = () => {
   // const cards = [
@@ -48,10 +48,6 @@ const App = () => {
     
     <div className="app">
         <BasicNav></BasicNav>
-        <Routes>
-      <Route path="/Gallery" element={<Gallery />} />
-    </Routes>
-        {/* <CardList cards={cards} /> */}
     </div>
   );
 };
