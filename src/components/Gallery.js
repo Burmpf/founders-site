@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import "./Gallery.css"
 
 class Gallery extends Component {
     static propTypes = {
@@ -16,12 +17,14 @@ class Gallery extends Component {
         const { cards } = this.props;
         return (
             <div className="card-list">
+                <h1><u>Meet The Founders</u></h1>
+                
                 <Row>
                     {cards.map((card) => {
                         const { id, title, imageUrl, link, subtitle } = card;
                         return (
-                            <Col xs={12} md={4} key={id}>
-                                <Card style={{ width: "18rem" }}>
+                            <Col xs={12} md={4} align="center" key={id}>
+                                <Card style={{ width: "25rem" }}>
                                     <Card.Img variant="top" src={imageUrl} alt={title} />
                                     <Card.Body>
                                         <Card.Title>{title}</Card.Title>
@@ -35,6 +38,10 @@ class Gallery extends Component {
                         );
                     })}
                 </Row>
+
+                <h1><u>Meet The Team</u></h1>
+                <h2>Our Whitelist/Alpha Hunters</h2>
+                
             </div>
         );
     }
