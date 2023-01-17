@@ -8,7 +8,7 @@ class NavbarComponent extends Component {
     render() {
         return (
             <Navbar class="nav"  bg="dark" variant='dark' expand="lg">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img
                         src="/images/foundasdaodesign2.png"
                         width="75"
