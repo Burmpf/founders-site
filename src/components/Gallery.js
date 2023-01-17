@@ -40,20 +40,9 @@ class Gallery extends Component {
                 </Row>
 
                 <h1><u>Meet The Team</u></h1>
-                <h2>Our Whitelist/Alpha Hunters</h2>
+                <br></br>
                 <Row>
-                            <Col xs={12} md={4} align="center">
-                                <Card style={{ width: "25rem" }}>
-                                    <Card.Img variant="top" src='./images/mohish-pfp.jpeg' alt='Mohish' />
-                                    <Card.Body>
-                                        <Card.Title>Mohish</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">The Grinder</Card.Subtitle>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <a href="https://mobile.twitter.com/ballistic_NFT" className="btn btn-primary">Follow on Twitter!</a>
-                                    </Card.Footer>
-                                </Card>
-                            </Col>
+                    <h2><u>Our Fearless Leaders</u></h2>
                             <Col xs={12} md={4} align="center">
                                 <Card style={{ width: "25rem" }}>
                                     <Card.Img variant="top" src='./images/marcus-founder.png' alt='Marcus' />
@@ -75,6 +64,32 @@ class Gallery extends Component {
                                     </Card.Body>
                                     <Card.Footer>
                                         <a href="hhttps://twitter.com/endless_poor" className="btn btn-primary">Follow on Twitter!</a>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                <h2><u>Our Whitelist/Alpha Hunters</u></h2>
+                
+                            <Col xs={12} md={4} align="center">
+                                <Card style={{ width: "25rem" }}>
+                                    <Card.Img variant="top" src='./images/mohish-pfp.jpeg' alt='Mohish' />
+                                    <Card.Body>
+                                        <Card.Title>Mohish</Card.Title>
+                                        <Card.Subtitle className="mb-2 text-muted">The Grinder</Card.Subtitle>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <a href="https://mobile.twitter.com/ballistic_NFT" className="btn btn-primary">Follow on Twitter!</a>
+                                    </Card.Footer>
+                                </Card>
+                            </Col>
+                            <Col xs={12} md={4} align="center">
+                                <Card style={{ width: "25rem" }}>
+                                    <Card.Img variant="top" src='./images/simple-pfp.jpeg' alt='Simple' />
+                                    <Card.Body>
+                                        <Card.Title>Simple</Card.Title>
+                                        <Card.Subtitle className="mb-2 text-muted">The Lemon Head</Card.Subtitle>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <a href="https://twitter.com/Denvalerka" className="btn btn-primary">Follow on Twitter!</a>
                                     </Card.Footer>
                                 </Card>
                             </Col>
