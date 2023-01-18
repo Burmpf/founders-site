@@ -12,7 +12,7 @@ const cards = [
         id: 1,
         title: 'Burmpf',
         subtitle: 'The Lengendary Sayian',
-        imageUrl: './images/broly-founder.png',
+        imageUrl: './images/broly.gif',
         link: 'https://twitter.com/Burmpf',
     },
     {
