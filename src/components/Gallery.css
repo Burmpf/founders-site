@@ -1,6 +1,10 @@
 .card{
     margin-bottom: 100px;
 }
-h1{
+h1,h2{
     margin-bottom: 50px;
+}
+
+.founder-Card{
+    background-color: #202429;
 }
