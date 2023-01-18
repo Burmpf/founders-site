@@ -47,14 +47,14 @@ const cards = [
         id: 6,
         title: 'Zykon',
         subtitle: 'The Skier',
-        imageUrl: './images/skier-zykon.png',
+        imageUrl: './images/zykon-founder-animated.gif',
         link: 'https://twitter.com/_Zykon',
     },
     {
         id: 7,
         title: "TeeTree",
         subtitle: "The Psychic",
-        imageUrl: "./images/teetree-founder.jpeg",
+        imageUrl: "./images/teetree-founder-animated.gif",
         link: "https://twitter.com/ratedteaz",
     },
     {
@@ -77,6 +77,20 @@ const cards = [
         subtitle: "The Doctor",
         imageUrl: "./images/doctor-founder.png",
         link: "https://twitter.com/LitEnzoo"
+    },
+    {
+        id: 11,
+        title: "TH",
+        subtitle: "The Baghead",
+        imageUrl: "./images/TH-founder-animated.gif",
+        link: "https://twitter.com/T_H_NFT"
+    },
+    {
+        id: 12,
+        title: "Phocking",
+        subtitle: "The Curator",
+        imageUrl: "./images/phocking-founder-animated.gif",
+        link: "https://twitter.com/phockingy"
     }
 ];
 
