@@ -26,6 +26,7 @@ class NavbarComponent extends Component {
                             <NavDropdown.Item href="https://exchange.art/the-founders/nfts">ExchangeArt</NavDropdown.Item>
                             <NavDropdown.Item href="https://magiceden.io/marketplace/founders">Magic Eden</NavDropdown.Item>
                             <NavDropdown.Item href="https://discord.gg/founders">Discord</NavDropdown.Item>
+                            <NavDropdown.Item href="https://twitter.com/FoundersSOL">Twitter</NavDropdown.Item>
                             
                         </NavDropdown>
                     </Nav>
