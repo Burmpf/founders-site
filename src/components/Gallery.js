@@ -68,7 +68,7 @@ class Gallery extends Component {
                             </Col>
                             <Col xs={12} md={4} align="center">
                                 <Card style={{ width: "25rem" }}>
-                                    <Card.Img variant="top" src='./images/endless-founder.png' alt='Endless' />
+                                    <Card.Img variant="top" src='./images/founder-love.gif' alt='Endless' />
                                     <Card.Body>
                                         <Card.Title>Endless</Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted">Founders Founder</Card.Subtitle>
