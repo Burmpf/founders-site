@@ -17,3 +17,10 @@ body{
     background-color: #202429;
     color: white;
 }
+.dropdown-menu{
+    background-color: #9b9d9e;
+}
+div.row{
+    margin-right: 0;
+    margin-left: 0;
+}
