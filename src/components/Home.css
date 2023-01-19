@@ -16,6 +16,13 @@ body{
 .founder-card{
     background-color: #202429;
     color: white;
+    width: 50%;
+}
+@media (max-width:700px) {
+    .founder-card{
+        width: 100%;
+    }
+    
 }
 .dropdown-menu{
     background-color: #9b9d9e;

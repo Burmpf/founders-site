@@ -24,7 +24,7 @@ class Gallery extends Component {
                         const { id, title, imageUrl, link, subtitle } = card;
                         return (
                             <Col xs={12} md={4} align="center" key={id}>
-                                <Card className='founder-card' style={{ width: "23rem" }}>
+                                <Card className='founder-card'>
                                     <Card.Img variant="top" src={imageUrl} alt={title} />
                                     <Card.Body>
                                         <Card.Title>{title}</Card.Title>
@@ -44,7 +44,7 @@ class Gallery extends Component {
                 <Row>
                     <h2><u>Our Fearless Leaders</u></h2>
                     <Col xs={12} md={4} align="center">
-                        <Card className='founder-card' style={{ width: "23rem" }}>
+                        <Card className='founder-card'>
                             <Card.Img variant="top" src='./images/marcus-founder.png' alt='Marcus' />
                             <Card.Body>
                                 <Card.Title>Marcus</Card.Title>
@@ -56,7 +56,7 @@ class Gallery extends Component {
                         </Card>
                     </Col>
                     <Col xs={12} md={4} align="center">
-                        <Card className='founder-card' style={{ width: "23rem" }}>
+                        <Card className='founder-card'>
                             <Card.Img variant="top" src='./images/founder-love.gif' alt='Endless' />
                             <Card.Body>
                                 <Card.Title>Endless</Card.Title>
@@ -70,7 +70,7 @@ class Gallery extends Component {
                     <h2><u>Our Whitelist/Alpha Hunters</u></h2>
                     <CardGroup>
                             <Col xs={12} md={4} align="center">
-                            <Card className='founder-card' style={{ width: "23rem" }}>
+                            <Card className='founder-card'>
                                 <Card.Img variant="top" src='./images/mohish-pfp.jpeg' alt='Mohish' />
                                 <Card.Body>
                                     <Card.Title>Mohish</Card.Title>
@@ -82,7 +82,7 @@ class Gallery extends Component {
                             </Card>
                         </Col>
                         <Col xs={12} md={4} align="center">
-                            <Card className='founder-card' style={{ width: "23rem" }}>
+                            <Card className='founder-card'>
                                 <Card.Img variant="top" src='./images/simple-pfp.jpeg' alt='Simple' />
                                 <Card.Body>
                                     <Card.Title>Simple</Card.Title>
