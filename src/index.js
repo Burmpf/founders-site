@@ -90,7 +90,14 @@ const cards = [
         title: "Phocking",
         subtitle: "The Curator",
         imageUrl: "./images/phocking-founder-animated.gif",
-        link: "https://twitter.com/phockingy"
+        link: "https://twitter.com/phockingy",
+    },
+    {
+        id: 13,
+        title: "Oldman",
+        subtitle: "The Old Man",
+        imageUrl: "./images/oldman-founder.png",
+        link: "https://twitter.com/wmblore",
     }
 ];
 

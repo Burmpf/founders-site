@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import DarkMode from './DarkMode.tsx';
 import "./navbar.css";
 
 
 class NavbarComponent extends Component {
     render() {
         return (
-            <Navbar class="nav"  bg="dark" variant='dark' expand="lg">
+            <Navbar sticky='top'  bg="dark" variant='dark' expand="lg">
                 <Navbar.Brand href="/">
                     <img
                         src="/images/foundasdaodesign2.png"
@@ -31,6 +32,7 @@ class NavbarComponent extends Component {
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
+                <DarkMode></DarkMode>
             </Navbar>
         );
     }
