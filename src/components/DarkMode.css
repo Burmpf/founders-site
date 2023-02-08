@@ -1,15 +1,18 @@
+/* 1 */
 :root {
     --font-color: #333;
     --background-color: #eee;
     --link-color: cornflowerblue;
 }
 
+/* 2 */
 [data-theme="dark"] {
-    --font-color: #202429;
-    --background-color: #544E81;
+    --font-color: #eee;
+    --background-color: #333;
     --link-color: lightblue;
 }
 
+/* 3 */
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -18,6 +21,8 @@ body {
 a {
     color: var(--link-color);
 }
+
+
 
 /* Custom Dark Mode Toggle Element */
 .toggle-theme-wrapper {
@@ -69,7 +74,7 @@ input:checked+.slider:before {
 }
 
 input:checked+.slider {
-    background-color:#544e81 ;
+    background-color: cornflowerblue;
 }
 
 .slider.round {
@@ -79,4 +84,3 @@ input:checked+.slider {
 .slider.round:before {
     border-radius: 50%;
 }
-

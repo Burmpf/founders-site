@@ -43,7 +43,7 @@ const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
 const DarkMode = () => {
     return (
         <div className="toggle-theme-wrapper">
-            <span><img alt="light mode" src="./images/light-mode.svg"></img></span>
+            <span>☀️</span>
             <label className="toggle-theme" htmlFor="checkbox">
                 <input
                     type="checkbox"
@@ -55,7 +55,7 @@ const DarkMode = () => {
                 />
                 <div className="slider round"></div>
             </label>
-            <span><img alt="dark mode" src="./images/dark-mode.svg"></img></span>
+            <span>🌒</span>
         </div>
     );
 };
