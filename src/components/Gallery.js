@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, Row, Col, CardGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import "./Gallery.css"
-import ReactFreezeframe from 'freezeframe';
+// import ReactFreezeframe from 'freezeframe';
 
 class Gallery extends Component {
     static propTypes = {
