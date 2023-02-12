@@ -12,6 +12,12 @@
     --link-color: lightblue;
 }
 
+[data-theme="light"] {
+    --font-color: #333;
+    --background-color: #eee;
+    --link-color: lightblue;
+}
+
 /* 3 */
 body {
     background-color: var(--background-color);
@@ -21,7 +27,6 @@ body {
 a {
     color: var(--link-color);
 }
-
 
 
 /* Custom Dark Mode Toggle Element */

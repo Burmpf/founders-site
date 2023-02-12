@@ -52,10 +52,10 @@ const cards = [
     },
     {
         id: 7,
-        title: "TeeTree",
+        title: "Akke",
         subtitle: "The Psychic",
         imageUrl: "./images/teetree-founder-animated.gif",
-        link: "https://twitter.com/ratedteaz",
+        link: "https://twitter.com/_Akkke",
     },
     {
         id: 8,
@@ -74,8 +74,8 @@ const cards = [
     {
         id: 10,
         title:"Enzo",
-        subtitle: "The Doctor",
-        imageUrl: "./images/doctor-founder.png",
+        subtitle: "The Demon",
+        imageUrl: "./images/demon-founder.png",
         link: "https://twitter.com/LitEnzoo"
     },
     {
@@ -98,7 +98,49 @@ const cards = [
         subtitle: "The Old Man",
         imageUrl: "./images/oldman-founder.png",
         link: "https://twitter.com/wmblore",
-    }
+    },
+    {
+        id: 15,
+        title: "Abeeku",
+        subtitle: "The Solider",
+        imageUrl: "./images/solider-founder.gif",
+        link: "https://twitter.com/_Abeeku",
+    },
+    {
+        id: 16,
+        title: "Domii",
+        subtitle: "The Assasin",
+        imageUrl: "./images/assassin-founder.png",
+        link: "https://twitter.com/Domii_sol",
+    },
+    {
+        id: 17,
+        title: "Red Trident",
+        subtitle: "The Daiymo",
+        imageUrl: "./images/daiymo-founder.png",
+        link: "https://twitter.com/redtrident_sol",
+    },
+    {
+        id: 18,
+        title: "Yuno",
+        subtitle: "The Lelouch",
+        imageUrl: "./images/lelouch-founder.png",
+        link: "https://twitter.com/yuno6510",
+    },
+    {
+        id: 19,
+        title: "Benny",
+        subtitle: "The Pheonix",
+        imageUrl: "./images/phoenix-founder.png",
+        link: "https://twitter.com/Bennybambino17",
+    },
+    {
+        id: 20,
+        title: "Ming",
+        subtitle: "The Pheonix",
+        imageUrl: "./images/the-one-founder.png",
+        link: "https://twitter.com/ming__sol",
+    },
 ];
 
 ReactDOM.render(

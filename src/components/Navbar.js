@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import DarkMode from './DarkMode.tsx';
+// import DarkMode from './DarkMode.js';
 import "./navbar.css";
 
 
@@ -32,7 +32,7 @@ class NavbarComponent extends Component {
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-                <DarkMode></DarkMode>
+                {/* <DarkMode></DarkMode> */}
             </Navbar>
         );
     }

@@ -1,14 +1,8 @@
 import "./DarkMode.css";
-import { ChangeEventHandler } from "react";
 import React from "react";
 
-// 1
+
 const setDark = () => {
-
-    // 2
-    localStorage.setItem("theme", "dark");
-
-    // 3
     document.documentElement.setAttribute("data-theme", "dark");
 };
 
@@ -17,7 +11,6 @@ const setLight = () => {
     document.documentElement.setAttribute("data-theme", "light");
 };
 
-// 4
 const storedTheme = localStorage.getItem("theme");
 
 const prefersDark =
@@ -31,8 +24,7 @@ if (defaultDark) {
     setDark();
 }
 
-// 5
-const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
+const toggleTheme = (e) => {
     if (e.target.checked) {
         setDark();
     } else {
@@ -44,12 +36,10 @@ const DarkMode = () => {
     return (
         <div className="toggle-theme-wrapper">
             <span>☀️</span>
-            <label className="toggle-theme" htmlFor="checkbox">
+            <label className="toggle-theme">
                 <input
                     type="checkbox"
                     id="checkbox"
-
-                    // 6
                     onChange={toggleTheme}
                     defaultChecked={defaultDark}
                 />
