@@ -5,7 +5,7 @@ import NavbarComponent from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './components/Gallery';
 import Home from './components/Home';
-import DoTicker from './components/Ticker';
+// import DoTicker from './components/Ticker';
 
 //info on each founder to display
 
@@ -205,7 +205,7 @@ const cards = [
 ReactDOM.render(
     <BrowserRouter>
         <NavbarComponent />
-        <DoTicker />
+        {/* <DoTicker /> */}
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery cards={cards} />} />
