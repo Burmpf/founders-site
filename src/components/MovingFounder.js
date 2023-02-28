@@ -1,40 +1,45 @@
 import React from "react";
+import "./MovingFounder.css";
 
 class MovingFounder extends React.Component {
     render() {
+        document.addEventListener("mousemove", (e) => {
+            const mouseX=e.clientX;
+            const mouseY=e.clientY;
 
+            const anchor = document.getElementById('anchor');
+            const rekt = anchor.getBoundingClientRect();
+            const anchorX = rekt.left + rekt.width / 2;
+            const anchorY = rekt.top + rekt.height / 2;
+            const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
 
-        //This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
-        window.onload = function () {
-            (".move-area").mousemove(function (event) {
-                var eye = (".eye");
-                console.log('eye', eye)
-                var x = (eye.offset().left) + (eye.width() / 2);
-                var y = (eye.offset().top) + (eye.height() / 2);
-                var rad = Math.atan2(event.pageX - x, event.pageY - y);
-                var rot = (rad * (180 / Math.PI) * -1) + 180;
-                eye.css({
-                    '-webkit-transform': 'rotate(' + rot + 'deg)',
-                    '-moz-transform': 'rotate(' + rot + 'deg)',
-                    '-ms-transform': 'rotate(' + rot + 'deg)',
-                    'transform': 'rotate(' + rot + 'deg)'
-                });
-            });
-        };
-        
-        
-        return (
-                <div>
-                    <section class="move-area">
-                        <div class='.container'>
-                            <div class='eye'></div>
-                            <div class='eye'></div>
-                        </div>
-                    </section>
-                </div>
-            );
+            console.log(angleDeg);
+
+            const eyes = document.querySelector(".founder-eyes");
+            eyes.forEach((eye) => {
+                eye.style.transform = `rotate(${angleDeg}deg)`;
+            })
+        });
+
+        function angle(cx, cy, ex, ey){
+            const dy=ey-cy;
+            const dx=ex-cx;
+            const rad = Math.atan2(dy,dx);
+            const deg = rad * (180/Math.PI);
+            return deg;
+
         }
+
+        return (
+            <div className="founder-moving">
+                <img className="anchor" src="./images/noeyes-founder.png" alt="founder body" />
+                <div>
+                    <img className="founder-eyes" src="./images/founder-eyes.png" alt="founder eyes" />
+                </div>
+            </div>
+        );
     }
+}
 
 
 
