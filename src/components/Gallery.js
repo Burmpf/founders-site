@@ -1,5 +1,5 @@
 import React /*, { Component }*/ from 'react';
-import { Card, Row, Col, CardGroup, CardImg } from 'react-bootstrap';
+import { Card, Row, Col, CardGroup, } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import "./Gallery.css"
 
