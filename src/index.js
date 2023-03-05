@@ -108,10 +108,10 @@ const cards = [
     },
     {
         id: 12,
-        title: "Phocking",
+        title: "Cryptid",
         subtitle: "The Curator",
         imageUrl: "./images/curator-founder.png",
-        link: "https://twitter.com/phockingy",
+        link: "https://twitter.com/deathsdo0r",
         hoverUrl: './images/phocking-founder-animated.gif'
     },
     {
