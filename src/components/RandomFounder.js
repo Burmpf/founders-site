@@ -1,22 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavbarComponent from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Gallery from './components/Gallery';
-import Home from './components/Home';
-import App from './App';
+import React, { Component } from 'react';
+import './RandomFounder.css';
 
-// import DoTicker from './components/Ticker';
-
-//info on each founder to display
-
-// 'id' to iterate 
-// 'title' is owner name 
-// 'subtitle' is founder name
-// 'imageUrl' is the still image that will be displayed
-// 'link' is the link to the twitter
-// 'hoverUrl' is the animated image that will be displayed when the mouse is over the still image
 const cards = [
     {
         id: 1,
@@ -204,18 +188,45 @@ const cards = [
     },
 ];
 
+class RandomFounder extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currentImage: null,
+        };
+
+        this.handleImageClick = this.handleImageClick.bind(this);
+    }
+
+    componentDidMount() {
+        const randomIndex = Math.floor(Math.random() * cards.length);
+        this.setState({ currentImage: cards[randomIndex] });
+    }
+
+    handleImageClick() {
+        const randomIndex = Math.floor(Math.random() * cards.length);
+        this.setState({ currentImage: cards[randomIndex] });
+    }
+
+    render() {
+        const { currentImage } = this.state;
+
+        if (!currentImage) {
+            return null;
+        }
+
+        return (
+            <>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <img width={300} height={300} alt='Random Founder' src={currentImage.imageUrl} onClick={this.handleImageClick}/>
+                </div>
+                <p style={{ display: "flex", justifyContent: "center" }}>Click Me!</p>
+            </>
+        );
+    }
+}
+
+export default RandomFounder;
 
 
-ReactDOM.render(
-
-    <BrowserRouter>
-        <App {...cards} />
-        <NavbarComponent />
-        {/* <DoTicker /> */}
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery cards={cards} />} />
-        </Routes>
-    </BrowserRouter>,
-    document.getElementById('root')
-);

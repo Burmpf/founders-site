@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import DarkMode from './components/DarkMode';
+// import DarkMode from './components/DarkMode';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <DarkMode></DarkMode>
+          {/* <DarkMode></DarkMode> */}
         </header>
       </div>
     );
