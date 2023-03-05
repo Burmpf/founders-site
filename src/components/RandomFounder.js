@@ -219,7 +219,7 @@ class RandomFounder extends Component {
         return (
             <>
                 <div style={{ display: "flex", justifyContent: "center" }}>
-                    <img width={300} height={300} alt='Random Founder' src={currentImage.imageUrl} onClick={this.handleImageClick} />
+                    <img width={300} height={300} alt='Random Founder' src={currentImage.imageUrl} onClick={this.handleImageClick}/>
                 </div>
                 <p style={{ display: "flex", justifyContent: "center" }}>Click Me!</p>
             </>
@@ -228,3 +228,5 @@ class RandomFounder extends Component {
 }
 
 export default RandomFounder;
+
+
