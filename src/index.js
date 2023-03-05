@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './components/Gallery';
 import Home from './components/Home';
 import App from './App';
+
 // import DoTicker from './components/Ticker';
 
 //info on each founder to display
